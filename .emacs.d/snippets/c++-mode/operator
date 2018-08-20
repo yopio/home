@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: o
+# --
+/*!
+ * @fn operator $1
+ * @brief 
+ * @details 
+ * @return 
+ * @exception none
+*/
+auto operator ${1:operator} ($2) -> ${3:Return};

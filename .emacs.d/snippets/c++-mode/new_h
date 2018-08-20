@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: new_h
+# key: newh
+# --
+/*!
+ * @file $2
+ * @brief $3
+ * @author $4
+ * @date $5
+ * @details $6
+ */
+#ifndef _$1_H_
+#define _$1_H_
+
+$0
+
+#endif // _$1_H_
+

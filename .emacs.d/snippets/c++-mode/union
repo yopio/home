@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: union
+# key: union
+# --
+/*!
+ * @union $1
+ * @brief 
+ * @details 
+*/
+union ${1:Enum}
+{
+  $0 /*!<   */
+};

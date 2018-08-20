@@ -1,0 +1,49 @@
+# -*- mode: snippet -*-
+# name: class
+# key: class
+# --
+//! ----------------------------------------------------------------------------
+//! @class $1
+//! @brief
+//! @details
+//! ----------------------------------------------------------------------------
+class ${1:Class}
+{
+ public:
+  //! The default class constructor.
+  /*!
+   * 
+   */
+  ${1:$(yas/substr yas-text "[^: ]*")} () = default;
+
+  //! The copy constructor of the class.
+  /*!
+   * 
+   */
+  ${1:$(yas/substr yas-text "[^: ]*")} (const ${1:$(yas/substr yas-text "[^: ]*")}& ${2:arg}) = default;
+
+  //! The move constructor of the class.
+  /*!
+   * 
+   */
+  ${1:$(yas/substr yas-text "[^: ]*")} (${1:$(yas/substr yas-text "[^: ]*")}&& ${2:$(yas/substr yas-text "[^: ]*")}) = default;
+
+  //! The default class destructor.
+  /*!
+   * 
+   */
+  virtual ~${1:$(yas/substr yas-text "[^: ]*")} () = default;
+
+  //! The copy assignment operator of the class.
+  /*!
+   * 
+   */
+  auto operator = (const ${1:$(yas/substr yas-text "[^: ]*")}& ${2:$(yas/substr yas-text "[^: ]*")}) -> ${1:$(yas/substr yas-text "[^: ]*")}& = default;
+
+  //! The move assignment operator of the class.
+  /*!
+   * 
+   */
+  auto operator = (${1:$(yas/substr yas-text "[^: ]*")}&& ${2:$(yas/substr yas-text "[^: ]*")}) -> ${1:$(yas/substr yas-text "[^: ]*")}& = default;
+$0
+}; // class ${1:$(yas/substr yas-text "[^: ]*")}

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: func
+# key: f
+# --
+/*!
+ * @fn
+ * explain
+ * @brief      
+ * @param[in]  
+ * @param[out] 
+ * @return     
+ * @details    
+ * @exception  
+ */
+auto ${1:Function} (${2:Param}) -> ${3:Return};
